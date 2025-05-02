@@ -5,12 +5,25 @@ body {
 
 header {
   background: #ffd866;
-  color: white;
-  padding: 1rem;
+  color: black;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo {
+  height: 4em; 
+  padding-left: 0.5em;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 nav a {
