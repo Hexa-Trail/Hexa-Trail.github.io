@@ -49,10 +49,10 @@ nav a {
 
 /* #region text */
 section {
-  padding-left: 2rem;
+  padding-left: 4rem;
   padding-top: 1rem;
   padding-bottom: 0rem;
-  padding-right: 2em;
+  padding-right: 4em;
   /* border: red 1px solid; */
 }
 
