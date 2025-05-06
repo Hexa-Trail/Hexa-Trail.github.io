@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   padding-top: 4rem; /* for fixed navbar */
+  font-size: 16px;
 }
 
 /* #region navbar */
@@ -26,6 +27,8 @@ header {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.6rem;
+  text-align: left;
+  user-select: none;
 }
 
 #logo {
@@ -127,6 +130,12 @@ section h2 {
   .slides img {
     height: auto;
   }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2em;
+    /* border: red 1px solid; */
+  }
 }
 /* #endregion */
 
@@ -135,4 +144,5 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
