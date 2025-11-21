@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Hexa Trail</title>
+    <title>HexaTrail</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./index_resources/Hexa Trail logo v3.png">
     <link href="./index_resources/index_style.css" rel="stylesheet">
@@ -10,61 +10,191 @@
 
   <body>
     <header>
-        <div class="brand">
-            <img src="./index_resources/Hexa Trail logo v3.png" draggable="false" id="logo" alt="Logo HexaTrail" />
-            <h1>HexaTrail</h1>
+      <div class="brand">
+        <img src="./index_resources/Hexa Trail logo v3.png" draggable="false" id="logo" alt="Logo HexaTrail" />
+        <div class="brand-text">
+          <h1>HexaTrail</h1>
+          <span class="brand-tagline">MTB telemetry made simple</span>
         </div>
-        <nav>
-            <a href="#about">À propos</a>
-            <a href="https://hexa-trail.github.io/HexaTrail-App/">App</a>
-        </nav>
+      </div>
+      <nav>
+        <a href="#project">Le projet</a>
+        <a href="#hardware">Matériel</a>
+        <a href="#software">Logiciel</a>
+        <a href="#contact">Contact</a>
+        <a href="https://hexa-trail.github.io/HexaTrail-App/" class="nav-btn">App</a>
+      </nav>
     </header>
-      
-    <section id="hero">
-        <div class="carousel">
-            <div class="slides">
-                <img src="./index_resources/pictures/bike_profile.jpg" alt="bike equiped" />
-                <img src="./index_resources/pictures/analysis_software.jpg" alt="analysis software" />
-                <img src="./index_resources/pictures/hardware.jpg" alt="hardware" />
-                <img src="./index_resources/pictures/kinematics_software.jpg" alt="kinematics" />
-            </div>
-            <div class="indicators"></div>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="carousel hero-carousel">
+        <div class="slides">
+          <img src="./index_resources/pictures/bike_profile.jpg" alt="bike equiped" />
+          <img src="./index_resources/pictures/analysis_software.jpg" alt="analysis software" />
+          <img src="./index_resources/pictures/hardware.jpg" alt="hardware" />
+          <img src="./index_resources/pictures/kinematics_software.jpg" alt="kinematics" />
         </div>
+        <div class="indicators"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <div class="hero-content glass-card">
+          <span class="pill">Télémétrie VTT</span>
+          <h2>Comprenez vos suspensions. <br>Gagnez en vitesse.</h2>
+          <p>
+            HexaTrail combine un hardware compact et un logiciel d’analyse clair
+            pour optimiser vos réglages de suspension, que ce soit à l’entraînement
+            ou en course.
+          </p>
+          <div class="hero-actions">
+            <a href="#project" class="btn-primary">Découvrir le projet</a>
+            <a href="https://hexa-trail.github.io/HexaTrail-App/" class="btn-ghost">
+              Accéder à l’app
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>À propos</h2>
-      <p>HexaTrail est un système de télémétrie pour VTT performant, compact, abordable et conçu en France.</p>
-    </section>
+    <main>
+      <!-- LE PROJET -->
+      <section id="project" class="section">
+        <div class="section-inner glass-card">
+          <h2 class="section-title">Le projet</h2>
+          <p class="section-intro">
+            HexaTrail est un système de télémétrie pour VTT performant, compact,
+            abordable et conçu en France. Il vous aide à objectiver vos sensations
+            sur le terrain et à transformer vos réglages en vrais gains de temps.
+          </p>
+          <div class="project-grid">
+            <div class="project-item">
+              <h3>Objectif performance</h3>
+              <p>
+                Mesurez la réalité de vos réglages : débattement utilisé, progressivité,
+                comportement en freinage, dans les appuis ou sur les chocs répétés.
+              </p>
+            </div>
+            <div class="project-item">
+              <h3>Utilisable par tous</h3>
+              <p>
+                Une installation rapide, une interface web simple et des indicateurs
+                lisibles pour les pilotes, coachs et teams.
+              </p>
+            </div>
+            <div class="project-item">
+              <h3>Écosystème complet</h3>
+              <p>
+                Hardware, acquisition, visualisation et outils de cinématique :
+                tout est pensé pour fonctionner ensemble.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="hardware">
-        <h2>Hardware</h2>
-        <ul>
-            <li>Acquisition à 500Hz</li>
-            <li>Potentiomètres linéaires</li>
-            <li>MPU6050 & GPS</li>
-            <li>Montage rapide sur tous les cadres</li>
-            <li>Communication des enregistrements en réseau local</li>
-          </ul>
-    </section>
+      <!-- MATÉRIEL -->
+      <section id="hardware" class="section">
+        <div class="section-inner">
+          <h2 class="section-title">Matériel</h2>
+          <p class="section-intro">
+            Un module compact pensé pour être monté rapidement sur différents vélos,
+            sans sacrifier la qualité des données.
+          </p>
 
-    <section id="software">
-        <h2>Software</h2>
-        <p>Le logiciel d'analyse d'HexaTrail est tout ce dont vous aurez besoin pour tirer la quintessence de vos suspensions :</p>
-        <ul>
-            <li>Page web pour maximiser la compatibilité avec vos appareils</li>
-            <li>Calcul intégré de la progressivité de votre vélo</li>
-            <li>Graphiques efficaces pour compprendre les changements nécessaires</li>
-        </ul>
-    </section>
+          <div class="card-grid">
+            <article class="glass-card feature-card">
+              <h3>Acquisition haute fréquence</h3>
+              <p>Enregistrement jusqu’à 500 Hz pour capturer les chocs rapides et les détails du terrain.</p>
+              <ul>
+                <li>Potentiomètres linéaires sur fourche et amortisseur</li>
+                <li>Synchronisation capteurs mécanique & inertiel</li>
+              </ul>
+            </article>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email : nathan.cruzel@etu.emse.fr</p>
-    </section>
+            <article class="glass-card feature-card">
+              <h3>Capteurs intégrés</h3>
+              <p>Mesurez la dynamique complète du vélo et du pilote.</p>
+              <ul>
+                <li>MPU6050 (accéléromètre & gyroscope)</li>
+                <li>GPS pour la vitesse et le positionnement</li>
+              </ul>
+            </article>
+
+            <article class="glass-card feature-card">
+              <h3>Intégration sur le vélo</h3>
+              <p>Une installation pensée pour l’atelier comme pour les week-ends de course.</p>
+              <ul>
+                <li>Montage rapide sur la plupart des cadres</li>
+                <li>Communication en réseau local pour exporter les runs</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGICIEL -->
+      <section id="software" class="section">
+        <div class="section-inner">
+          <h2 class="section-title">Logiciel</h2>
+          <p class="section-intro">
+            Une interface web pour analyser vos runs, comparer vos réglages
+            et comprendre l’impact de chaque modification.
+          </p>
+
+          <div class="card-grid">
+            <article class="glass-card feature-card">
+              <h3>Analyse depuis le navigateur</h3>
+              <p>
+                Pas d’installation complexe : ouvrez simplement la page et chargez vos runs.
+              </p>
+              <ul>
+                <li>Compatible multi-plateforme (PC, Mac, tablette…)</li>
+                <li>Navigation par runs et comparaisons</li>
+              </ul>
+            </article>
+
+            <article class="glass-card feature-card">
+              <h3>Cinématique intégrée</h3>
+              <p>
+                Calculez la progressivité de la suspension à partir de la cinématique du vélo.
+              </p>
+              <ul>
+                <li>Courbes de levier et débattement utilisé</li>
+                <li>Visualisation claire des zones critiques</li>
+              </ul>
+            </article>
+
+            <article class="glass-card feature-card">
+              <h3>Graphiques orientés réglages</h3>
+              <p>
+                Des représentations pensées pour décider rapidement : plus de temps sur le vélo, moins dans les menus.
+              </p>
+              <ul>
+                <li>Graphiques temps réel et agrégés</li>
+                <li>Repérage des différences entre réglages</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section-inner glass-card contact-card">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-intro">
+            Un projet, une question ou une collaboration autour de la performance en VTT ?
+          </p>
+          <div class="contact-content">
+            <p><strong>Email :</strong> <a href="mailto:nathan.cruzel@etu.emse.fr">nathan.cruzel@etu.emse.fr</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>HexaTrail - Tous droits réservés</p>
+      <p>HexaTrail – Tous droits réservés</p>
     </footer>
 
     <script src="index_resources/index_script.js"></script>
